@@ -328,6 +328,7 @@ body{
 
 .footer-nav{
 	display: flex;
+	cursor: pointer;
 }
 
 .footer-nav__item:not(:last-child){
