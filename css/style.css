@@ -335,7 +335,7 @@ body{
 }
 
 .footer-nav__item:not(:last-child){
-	margin-right: 30px;
+	padding-right: 30px;
 }
 
 @media(max-width: 1020px){
@@ -583,7 +583,7 @@ body{
     }
 
 	.footer-nav__item:not(:last-child) {
-    	margin-right: 15px;
+    	padding-right: 15px;
 	}
 
 	.footer-wrapper{
