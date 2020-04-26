@@ -328,6 +328,9 @@ body{
 
 .footer-nav{
 	display: flex;
+}
+
+.footer-nav__item{
 	cursor: pointer;
 }
 
