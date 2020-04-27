@@ -173,13 +173,20 @@ body{
 
 .benefits-item__link{
 	color: #006DFE;
-	text-transform: uppercase;
 }
 
-.psevdo__link::after{
-	content: "\2192";
-	margin-left: 15px;
-	color: #006DFE;
+.link__arrow{
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	padding-right: 59px;
+	background: url(../images/Shape.svg) no-repeat 95% center;
+	transition: all .2s;
+}
+
+.link__arrow:hover, 
+.link__arrow:focus{
+	background: url(../images/Shape.svg) no-repeat right center;
 }
 
 .inspired-top{
@@ -194,9 +201,9 @@ body{
 	line-height: 42px;
 }
 
-.inspited-top__link{
-	text-transform: uppercase;
+.inspired-top__link{
 	color: #006DFE;
+	max-height: 23px;
 }
 
 .inspired-items__top{
@@ -229,12 +236,6 @@ body{
 
 .inspired-item__image{
 	background: rgba(21, 24, 36, 0.4);
-}
-
-.inspired-item__image::after{
-	content: "";
-	background: rgba(21, 24, 36, 0.4);
-	box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
 }
 
 .inspired-item__text{
