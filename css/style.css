@@ -192,50 +192,88 @@ body{
 .inspired-top{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 46px;
+	margin-bottom: 36px;
+	align-items: center;
 }
 
-.inspired-top__title{
+.section__title{
 	font-weight: 500;
 	font-size: 35px;
 	line-height: 42px;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.section__title::after{
+	content: "";
+	display: block;
+	width: 253px;
+	height: 3px;
+	background-color: #006DFE;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.inspired{
+	margin-bottom: 131px;
 }
 
 .inspired-top__link{
 	color: #006DFE;
-	max-height: 23px;
 }
 
-.inspired-items__top{
-	display: flex;
-	margin-bottom: 10px;
+.inspired-items{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 10px;
 }
 
-.inspired-items__top img{
+.inspired-item{
+	position: relative;
+	overflow: hidden;
+}
+
+.inspired-item::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(21, 24, 36, 0.4);
+	box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.inspired-item:hover .inspired-item__image{
+	transform: scale(1.05);
+}
+
+.inspired-item__image-size_lg{
+	grid-column: span 3;
+	height: 100%;
+}
+
+.inspired-item__image_lg{
 	height: 354px;
-	width: 627px;
-	object-fit: cover;
 }
 
-.inspired-items__top img:first-child{
-	margin-right: 10px;
+.inspired-item__image-size_sm{
+	grid-column: span 2;
+	height: 100%;
 }
 
-.inspired-items__bottom{
-	display: flex;
-}
-
-.inspired-items__bottom img{
-	width: 415px;
-	height: 283px;
-	object-fit: cover;
-}
-.inspired-items__bottom img:not(:last-child){
-	margin-right: 10px;
+.inspired-item__image_sm{
+	width: 283px;
 }
 
 .inspired-item__image{
-	background: rgba(21, 24, 36, 0.4);
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	transition: all .15s;
 }
 
 .inspired-item__text{
@@ -243,9 +281,19 @@ body{
 	font-weight: bold;
 	font-size: 50px;
 	line-height: 60px;
-	z-index: 1;
+	z-index: 3;
 	position: absolute;
-	margin: -97px 0 0 30px;
+	bottom: 27px;
+	left: 29px;
+}
+
+.inspired-item__link{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
 }
 
 
