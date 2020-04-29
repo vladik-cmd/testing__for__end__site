@@ -488,10 +488,31 @@ body{
 	color: #FFFFFF;
 }
 
+@media(min-height: 1024px){
+	.header{
+		height: 1024px;
+	}
+}
+
+@media(max-height: 700px){
+	.header{
+		height: 700px;
+	}
+}
+
 @media(max-width: 1300px){
 	.benefits{
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+}
+
+@media(max-width: 1040px){
+	.inspired-item__text {
+	    font-size: 40px;
+	    line-height: 50px;
+	    bottom: 15px;
+	    left: 17px;
 	}
 }
 
@@ -565,6 +586,12 @@ body{
 	.header-input__int{
 		min-width: 265px;
 	}
+
+	.section__title {
+	    font-size: 30px;
+	    line-height: 35px;
+	    padding-bottom: 7px;
+	}
 }
 
 @media(max-width: 770px){
@@ -590,6 +617,13 @@ body{
     	font-size: 14px;
     	margin-bottom: 25px;
     }
+
+    .inspired-item__text {
+	    font-size: 30px;
+	    line-height: 30px;
+	    bottom: 10px;
+	    left: 10px;
+	}
 }
 
 @media(max-width: 700px){
@@ -721,6 +755,35 @@ body{
 		transform: scale(1.2);
 		margin-left: 37px;
 	}
+
+	.inspired-items {
+	    grid-template-columns: repeat(3, 1fr);
+	}
+
+	.inspired-item__image-size_sm {
+    	grid-column: span 3;
+    }
+
+    .inspired-item__text {
+	    font-size: 40px;
+	    line-height: 50px;
+	    bottom: 25px;
+	    left: 27px;
+	}
+
+	.inspired-top{
+		margin-bottom: 25px;
+	}
+
+	.section__title {
+	    font-size: 25px;
+	    line-height: 30px;
+	}
+
+	.link__arrow{
+		font-size: 14px;
+	}
+    
 }
 
 @media(max-width: 540px){
@@ -781,7 +844,46 @@ body{
     	font-weight: 500;
     	font-size: 30px;
     	line-height: 35px;
-    }
+ 	}
+
+ 	.inspired-top__link{
+ 		min-width: 125px;
+ 		margin-left: 7px;
+ 	}
+
+ 	.section__title::after {
+	    width: 200px;
+	}
+}
+
+@media(max-width: 440px){
+	.inspired-item__text {
+	    font-size: 35px;
+	    line-height: 40px;
+	    bottom: 20px;
+	    left: 22px;
+	}
+	.section__title::after {
+	    width: 140px;
+	}
+}
+
+    @media(max-width: 340px){
+    .section__title {
+	    font-size: 18px;
+	    line-height: 22px;
+	}
+
+	.inspired-item__text {
+	    font-size: 27px;
+	    line-height: 30px;
+	    bottom: 15px;
+	    left: 17px;
+	}
+
+	.inspired-top{
+		margin-bottom: 20px;
+	}
 }
 
 
