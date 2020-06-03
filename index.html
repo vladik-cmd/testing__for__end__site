@@ -1,413 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Odigo</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,550,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BotCreators</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-	<header class="header">
-		<div class="container-header">
-			<div class="header-top">
+	<div class="header-wrap">
+		<div class="header-bg">
+			<img src="images/header/header-bg.png" alt="">
+		</div>
+		<div class="container">
+			<div class="header" id="header">
+				<div class="header-top">
+					<div class="header-top__wrap">
+						<div class="logo">
+							<a href="#">
+								<img src="images/logo.svg" alt="logo">
+							</a>
+						</div>
+						<div class="header-lang">
+							<span class="active">Ru</span>/<span>En</span>
+						</div>
+					</div>
 
-				<div class="header-top__logo">
-					<a href="#">
-						<img src="images/Logo.svg" alt="logo">
+					<ul class="header-top__menu" id="menu">
+						<li><a href="#benefits">О нас</a></li>
+						<li><a href="#skills">Боты</a></li>
+						<li><a href="#technologies">Технологии</a></li>
+						<li><a href="#answer">Контакты</a></li>
+					</ul>
+				</div>
+
+				<div class="header-descr">
+					<div class="header-descr__title title">
+						Автоматизируйте
+					</div>
+					<div class="header-descr__text">
+						бизнес-процессы <br> с помощью чат-ботов
+					</div>
+				</div>
+
+				<div class="header-btn btn">
+					<div class="btn-text">Заказать бота</div>
+				</div>
+
+				<div class="header-scroll" id="scroll">
+					<a href="#benefits">
+						<img src="images/header/scroll.svg" alt="">
+						<img class="plus animated fadeInDown infinite slow" src="images/header/scroll plus.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup ">
+		<div class="popup-overlay"></div>	
+    	<div class="popup-content">
+    		<div class="popup-wrap">
+	        	<div class="popup-title title">
+				Заказ чат - бота
+				</div>
+
+				<div class="popup-text">
+					Оставьте заявку на обратный звонок и наш менеджер свяжется с Вами в рабочее время.
+				</div>
+
+				<form action="send.php" method="post" class="popup-form">
+					<div class="form-text">
+						Имя<span>*</span>
+					</div>
+					<input type="text" class="form-input" name="first_name">
+						
+					<div class="form-text">
+						Номер телефона<span>*</span>
+					</div>
+					<input type="tel" class="form-input" name="email">
+
+				</form>
+				
+				<div class="popup-btn submit">
+	   				Отправить
+	   			</div>
+	   			
+	   		</div>
+    	</div>	
+	</div>
+
+	<div class="container">
+		<div class="benefits" id="benefits">
+			<div class="benefits-item">
+				<div class="benefits-item__title title">
+					Кто мы?
+				</div> 
+				<div class="benefits-item__text">
+					Команда IT-специалистов. Более пяти лет опыта разработки крупных информационных систем от мобильных приложений до порталов корпоративного уровня
+				</div>
+			</div>
+
+			<div class="benefits-item">
+				<div class="circl"></div>
+				<div class="benefits-item__title title">
+					Что предлагаем?
+				</div> 
+				<div class="benefits-item__text">
+					Полную автоматизацию ваших бизнес-процессов за счет использования чат-ботов. Представьте, что в вашем штате появился сотрудник, который работает без ошибок и никогда не устает
+				</div>
+
+			</div>
+
+			<div class="benefits-item">
+				<div class="benefits-item__title title">
+					Что используем?
+				</div> 
+				<div class="benefits-item__text">
+					Обширный стек самых современных технологий, творческий подход и нестандартное мышление. Наши руки всегда на пульсе самых перспективных IT- тенденций
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="development-wrap">
+		<div class="container">
+			<div class="development">
+				<div class="development-title title">
+					Разработка чат-ботов для мессенджеров
+				</div>
+				<div class="development-content__wrap">
+					<div class="development-text">
+						Чат-боты представляют собой программы, с которыми пользователь может осуществлять имитацию живого общения. Использование ботов в мессенджерах -один из наиболее эффективных каналов коммуникации с пользователем. В чатах пользователю можно задавать вопросы, узнавать о нем больше и формулировать фактически персональные предложения.Таким образом вы сможете экономить время и деньги, привлекать целевых клиентов уникальным способом, запускать процесс рассылки рекламных материалов, полностью заменить службу поддержки и многое другое.
+					</div>
+					<div class="development-social">
+						<ul>
+							<li><a href="#"><img src="images/social-network/facebook.svg" alt=""></a></li>
+							<li><a href="#"><img src="images/social-network/whatsapp.svg" alt=""></a></li>
+							<li><a href="#"><img src="images/social-network/vk.svg" alt=""></a></li>
+							<li><a href="#"><img src="images/social-network/viber.svg" alt=""></a></li>
+							<li><a href="#"><img src="images/social-network/telegram.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-btn btn">
+					<div class="btn-text">Заказать бота</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="skills" id="skills">
+			<div class="skills-title title">
+				Что умеют наши боты?
+			</div>
+			<div class="skills-items">
+				<div class="skills-item">
+					<div class="skills-item__wrap">
+						<div class="skills-item__icon">
+							<img src="images/skills/1.svg" alt="">
+						</div>
+						<div class="skills-item__title title">
+							Опросы
+						</div>
+					</div>
+					<div class="skills-item__text">
+						Сбор информации о целевой аудитории компании для разработки стратегии продвижения
+					</div>
+				</div>
+
+				<div class="skills-item">
+					<div class="skills-item__wrap">
+						<div class="skills-item__icon">
+							<img src="images/skills/2.svg" alt="">
+						</div>
+						<div class="skills-item__title title">
+							Поддержка 24/7
+						</div>
+					</div>
+					<div class="skills-item__text">
+						Обеспечат обратную связь с пользователями 24 часа в сутки в любых каналах
+					</div>
+				</div>
+
+				<div class="skills-item">
+					<div class="skills-item__wrap">
+						<div class="skills-item__icon">
+							<img src="images/skills/3.svg" alt="">
+						</div>
+						<div class="skills-item__title title">
+							Рассылка
+						</div>
+					</div>
+					<div class="skills-item__text">
+						Организация и проведение рассылок новостей, акций, другой полезной информации
+					</div>
+				</div>
+
+				<div class="skills-item">
+					<div class="skills-item__wrap">
+						<div class="skills-item__icon">
+							<img src="images/skills/4.svg" alt="">
+						</div>
+						<div class="skills-item__title title">
+							Продажи
+						</div>
+					</div>
+					<div class="skills-item__text">
+						Продажи и продвижение пользователей «по воронке» в режиме диалога
+					</div>
+				</div>
+
+				<div class="skills-item">
+					<div class="skills-item__wrap">
+						<div class="skills-item__icon">
+							<img src="images/skills/5.svg" alt="">
+						</div>
+						<div class="skills-item__title title">
+							Оплата
+						</div>
+					</div>
+					<div class="skills-item__text">
+						Можно совершать финансовые операции, денежные переводы и проверять баланс.
+					</div>
+				</div>
+
+				<div class="skills-item">
+					<div class="skills-item__wrap">
+						<div class="skills-item__icon">
+							<img src="images/skills/6.svg" alt="">
+						</div>
+						<div class="skills-item__title title">
+							Поиск
+						</div>
+					</div>
+					<div class="skills-item__text">
+						Сделают удобным и быстрым поиск и загрузку информации, книг, фильмов и музыки
+					</div>
+				</div>
+
+				<div class="skills-item">
+					<div class="skills-item__wrap">
+						<div class="skills-item__icon">
+							<img src="images/skills/7.svg" alt="">
+						</div>
+						<div class="skills-item__title title">
+							Развлечения
+						</div>
+					</div>
+					<div class="skills-item__text">
+						Заказ столиков в ресторанах, спортивные клубы, события, кинотеатры, подбор туров и билетов
+					</div>
+				</div>
+
+				<div class="skills-item">
+					<div class="skills-item__wrap">
+						<div class="skills-item__icon">
+							<img src="images/skills/8.svg" alt="">
+						</div>
+						<div class="skills-item__title title">
+							Решение задач
+						</div>
+					</div>
+					<div class="skills-item__text">
+						Оптимизируют выполнение стандартных повторяющихся бизнес - задач. Например, оформление счета
+					</div>
+				</div>
+
+				<div class="skills-item">
+					<div class="skills-item__wrap">
+						<div class="skills-item__icon">
+							<img src="images/skills/9.svg" alt="">
+						</div>
+						<div class="skills-item__title title">
+							Обучение
+						</div>
+					</div>
+					<div class="skills-item__text">
+						Персональный наставник в мобильном телефоне как для сотрудников компании, так и для личного пользования
+					</div>
+				</div>
+			</div>
+			<div class="more-btn">
+				Показать ещё
+			</div>
+		</div>
+	</div>  
+
+	<div class="container">
+		<div class="integration">
+			<div class="integration-title title">
+				Возможности интеграции
+			</div>
+			<div class="integration-items">
+				<div class="integration-item">
+					<div class="integration-item__icon">
+						<img src="images/integrations/1.png" alt="">
+					</div>
+					<div class="integration-item__name">
+						DropBox
+					</div>
+				</div>
+
+				<div class="integration-item">
+					<div class="integration-item__icon">
+						<img src="images/integrations/2.png" alt="">
+					</div>
+					<div class="integration-item__name">
+						Google Диск
+					</div>
+				</div>
+
+				<div class="integration-item">
+					<div class="integration-item__icon">
+						<img src="images/integrations/3.png" alt="">
+					</div>
+					<div class="integration-item__name">
+						Яндекс Диск
+					</div>
+				</div>
+
+				<div class="integration-item">
+					<div class="integration-item__icon">
+						<img src="images/integrations/4.png" alt="">
+					</div>
+					<div class="integration-item__name">
+						Битрикс
+					</div>
+				</div>
+
+				<div class="integration-item">
+					<div class="integration-item__icon">
+						<img src="images/integrations/5.png" alt="">
+					</div>
+					<div class="integration-item__name">
+						AmoCRM
+					</div>
+				</div>
+
+				<div class="integration-item">
+					<div class="integration-item__icon">
+						<img src="images/integrations/6.png" alt="">
+					</div>
+					<div class="integration-item__name">
+						Любая платежная система
+					</div>
+				</div>
+
+				<div class="integration-item">
+					<div class="integration-item__icon">
+						<img src="images/integrations/7.png" alt="">
+					</div>
+					<div class="integration-item__name">
+						Любая Ваша система
+					</div>
+				</div>
+
+				<div class="integration-item">
+					<div class="integration-item__icon">
+						<img src="images/integrations/8.png" alt="">
+					</div>
+					<div class="integration-item__name">
+						Сайт
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="bots">
+			<div class="bots-title title">
+				Каких ботов мы делаем?
+			</div>
+			<div class="bots-text">
+				Мы не просто создаем чат-ботов, мы разрабатываем решения для бизнеса по вашей уникальной идее. Каждый проект отличается своим набором задач и трудоемкостью реализации. Поэтому стоимость внедрения чат-бота рассчитывается индивидуально и может составлять<span>от 100 000 рублей.</span> 
+			</div>
+			<div class="bots-items">
+				<ul>
+					<li><span class="bots-item__text">Четкие сроки разработки</span></li>
+					<li><span class="bots-item__text">Индивидуальный подход</span></li>
+					<li><span class="bots-item__text">Объективный расчет стоимости</span></li>
+				</ul>
+
+				<ul>
+					<li><span class="bots-item__text">Сотрудничество по договору</span></li>
+					<li><span class="bots-item__text">Только свежие IT- решения</span></li>
+					<li><span class="bots-item__text">Выполнение работы в срок</span></li>
+				</ul>
+			</div>
+			<div class="header-btn btn">
+				<div class="btn-text">Заказать бота</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="technologies" id="technologies">
+			<div class="technologies-title title">
+				Какие технологии мы используем?
+			</div>
+			<div class="technologies-items">
+				<div class="technologies-item">
+					<div class="technologies-item__icon">
+						<img src="images/technologies/1.png" alt="">
+					</div>
+					<div class="technologies-item__title title">
+						Telegram Bot API
+					</div>
+					<div class="technologies-item__text">
+						Самая популярная платформа для чатботов
+					</div>
+				</div>
+
+				<div class="technologies-item">
+					<div class="technologies-item__icon">
+						<img src="images/technologies/2.png" alt="">
+					</div>
+					<div class="technologies-item__title title">
+						PostgreSQL
+					</div>
+					<div class="technologies-item__text">
+						Надежная технология для хранения данных
+					</div>
+				</div>
+
+				<div class="technologies-item">
+					<div class="technologies-item__icon">
+						<img src="images/technologies/3.png" alt="">
+					</div>
+					<div class="technologies-item__title title">
+						Linux
+					</div>
+					<div class="technologies-item__text">
+						Лучшая операционная система для серверных решений
+					</div>
+				</div>
+
+				<div class="technologies-item">
+					<div class="technologies-item__icon">
+						<img src="images/technologies/4.png" alt="">
+					</div>
+					<div class="technologies-item__title title">
+						VK bot API
+					</div>
+					<div class="technologies-item__text">
+						Будьте на связи с пользователями самой большой соц-сети СНГ
+					</div>
+				</div>
+
+				<div class="technologies-item">
+					<div class="technologies-item__icon">
+						<img src="images/technologies/5.png" alt="">
+					</div>
+					<div class="technologies-item__title title">
+						Java
+					</div>
+					<div class="technologies-item__text">
+						Самый популярный язык программирования
+					</div>
+				</div>
+
+				<div class="technologies-item">
+					<div class="technologies-item__icon">
+						<img src="images/technologies/6.png" alt="">
+					</div>
+					<div class="technologies-item__title title">
+						Redis
+					</div>
+					<div class="technologies-item__text">
+						Кэширование запросов к внешним API. Боты выдержат тысячи запросов в секунду
+					</div>
+				</div>
+
+				<div class="technologies-item">
+					<div class="technologies-item__icon">
+						<img src="images/technologies/7.png" alt="">
+					</div>
+					<div class="technologies-item__title title">
+						Docker CI
+					</div>
+					<div class="technologies-item__text">
+						Современные серверные решения. Дом вашего бота будет самым уютным
+					</div>
+				</div>
+
+				<div class="technologies-item">
+					<div class="technologies-item__icon">
+						<img src="images/technologies/8.png" alt="">
+					</div>
+					<div class="technologies-item__title title">
+						Skype bot API
+					</div>
+					<div class="technologies-item__text">
+						Для любителей ретро <span>:)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="examples">
+			<div class="examples-title title">
+				Примеры наших ботов
+			</div>
+			<div class="examples-items">
+				<div class="examples-item">
+					<div class="examples-item__icon">
+						<img src="images/examples/1.png" alt="">
+					</div>
+					<div class="examples-item__text">
+						По слову "Кусочек" раздает уникальные промокоды
+					</div>
+					<div class="examples-btn">
+						<span>Открыть в ВКонтакте</span>
+					</div>
+				</div>
+
+				<div class="examples-item">
+					<div class="examples-item__icon">
+						<img src="images/examples/2.png" alt="">
+					</div>
+					<div class="examples-item__text">
+						Бот для создания смешных картинок (мемов)
+					</div>
+					<div class="examples-btn">
+						<span>Открыть в телеграм</span>
+					</div>
+				</div>
+
+				<div class="examples-item">
+					<div class="examples-item__icon">
+						<img src="images/examples/3.png" alt="">
+					</div>
+					<div class="examples-item__text">
+						Бот для настольной игры Менеджер 2020
+					</div>
+					<div class="examples-btn">
+						<span>Открыть в телеграм</span>
+					</div>
+				</div>
+
+				<div class="examples-item">
+					<div class="examples-item__icon">
+						<img src="images/examples/4.png" alt="">
+					</div>
+					<div class="examples-item__text">
+						Бот, подсказывающий текущие курсы криптовалют
+					</div>
+					<div class="examples-btn">
+						<span>Открыть в телеграм</span>
+					</div>
+				</div>
+
+				<div class="examples-item">
+					<div class="examples-item__icon">
+						<img src="images/examples/5.png" alt="">
+					</div>
+					<div class="examples-item__text">
+						Бот шифрует вашу ссылку в QR-код
+					</div>
+					<div class="examples-btn">
+						<span>Открыть в телеграм</span>
+					</div>
+				</div>
+
+				<div class="examples-item">
+					<div class="examples-item__icon">
+						<img src="images/examples/6.png" alt="">
+					</div>
+					<div class="examples-item__text">
+						Бот для заказа продукции компании «Балтийская целлюлоза»
+					</div>
+					<div class="examples-btn">
+						<span>Открыть в телеграм</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="answer" id="answer">
+			<div class="answer-title title">
+				Ответим на любые ваши вопросы
+			</div>
+			<div class="answer-text answer-text__top">
+				Свяжитесь с нами по любому из каналов:
+			</div>
+			<div class="answer-buttons">
+				<a href="#">
+					<div class="answer-btn">
+						<div class="answer-btn__icon">
+							<img src="images/answer/1.svg" alt="">
+						</div>
+						<div class="answer-btn__descr">
+							<div class="answer-btn__descr-title">
+								Telegram
+							</div>
+							<div class="answer-btn__descr-text">
+								Написать в мессенджер
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="answer-btn">
+						<div class="answer-btn__icon">
+							<img src="images/answer/2.svg" alt="">
+						</div>
+						<div class="answer-btn__descr">
+							<div class="answer-btn__descr-title">
+								Viber
+							</div>
+							<div class="answer-btn__descr-text">
+								Написать в мессенджер
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="answer-btn">
+						<div class="answer-btn__icon">
+							<img src="images/answer/3.svg" alt="">
+						</div>
+						<div class="answer-btn__descr">
+							<div class="answer-btn__descr-title">
+								VK
+							</div>
+							<div class="answer-btn__descr-text">
+								Написать в мессенджер
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="answer-text">
+				Или отправьте сообщение:
+			</div>
+			<form action="answer" class="answer-form">
+				<div class="form-block1">
+					<div class="form-text">
+						Имя<span>*</span>
+					</div>
+					<input type="text" class="form-input" name="first_name">
+
+					<div class="form-text">
+						E-mail<span>*</span>
+					</div>
+					<input type="email" class="form-input" name="email">
+
+					<div class="form-text">
+						Телефон<span>*</span>
+					</div>
+					<input type="tel" class="form-input" name="tel">
+				</div>
+				<div class="form-block2">
+					<div class="form-text" >
+						Есть промокод<span>?</span>
+					</div>
+					<input type="text" class="form-input" name="promo">
+					<div class="form-text">
+						Комментарий<span>*</span>
+					</div>
+					<textarea name="comment" id="" cols="30" rows="10" class="form-textarea" name="message"></textarea>
+				</div>
+			</form>
+			<div class="footer">
+				<div class="footer-text">
+					Отправляя заявку, вы соглашаетесь с <a href="#">политикой конфеденциальности</a>
+				</div>
+				<div class="footer-btn">
+					Отправить
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-footer">
+		<div class="trust">
+			<div class="trust-title title" id="btnup">
+				Нам доверяют
+				<a href="#header"></a>
+			</div>
+			<div class="trust-items">
+				<div class="trust-item">
+					<img src="images/trust/1.png" alt="">
+				</div>
+
+				<div class="trust-item">
+					<img src="images/trust/2.png" alt="">
+				</div>
+
+				<div class="trust-item">
+					<img src="images/trust/3.png" alt="">
+				</div>
+
+				<div class="trust-item">
+					<img src="images/trust/4.png" alt="">
+				</div>
+
+				<div class="trust-item">
+					<img src="images/trust/5.png" alt="">
+				</div>
+
+				<div class="trust-item">
+					<img src="images/trust/6.png" alt="">
+				</div>
+
+				<div class="trust-item">
+					<img src="images/trust/7.png" alt="">
+				</div>
+
+				<div class="trust-item">
+					<img src="images/trust/8.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-footer">
+		<div class="footer">
+			<div class="footer-title title">
+				ООО “Искусство автоматизации”
+			</div>
+			<div class="footer-wrap">
+				<div class="footer-items__info">
+					<a href="https://www.google.com.ua/maps/place/Автозаводская+ул.,+23Ак2,+Москва,+Россия,+115280/@55.7040229,37.6331938,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54b49278af23f:0x71f7af8882ad1ab1!8m2!3d55.7040199!4d37.6353825">
+						<div class="footer-item">
+							<div class="footer-item__icon">
+								<img src="images/footer/1.svg" alt="">
+							</div>
+							<div class="footer-item__text">
+								Автозаводская улица, 23А, к2 Россия, Москва
+							</div>
+						</div>
+					</a>
+
+					<a href="tel:+380954558921">
+						<div class="footer-item">
+							<div class="footer-item__icon">
+								<img src="images/footer/2.svg" alt="">
+							</div>
+							<div class="footer-item__text">
+								+38 095-455-89-21
+							</div>					
+						</div>
+					</a>
+
+					<a href="mailto:info@botcreators.ru">
+						<div class="footer-item">
+							<div class="footer-item__icon">
+								<img src="images/footer/3.svg" alt="">
+							</div>
+							<div class="footer-item__text">
+								info@botcreators.ru
+							</div>
+						</div>
 					</a>
 				</div>
 
-				<nav class="header-top__nav">
-					<ul>
-						<li><a href="#">Articles</a></li>
-						<li><a href="#">Locations</a></li>
-						<li><a href="#">Videos</a></li>
-						<li><a href="#">Sign in</a></li>
-					</ul>
-				</nav>
-
-				<div class="header-btn">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-
-				<div class="header-top__menu">
-					<div class="header-top__menu-list">
-						<ul>
-							<li><a href="#">Articles</a></li>
-							<li><a href="#">Locations</a></li>
-							<li><a href="#">Videos</a></li>
-							<li><a href="#">Sign in</a></li>
-						</ul>
-					</div>	
-					<div class="close-btn"></div>
-				</div>
-
-			</div>
-			<h1 class="header__title">Discover Amazing places in Japan</h1>
-			<span class="header__text">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, </span>
-			<div class="header__search">
-				<div class="header-input">
-					<input type="text" class="header-input__int" placeholder="What would you like to do?"></input>
-				</div>
-				<div class="header-input">
-					<input type="text" class="header-input__int" placeholder="Where would you like to go?"></input>
-				</div>
-					<button class="header__btn">search</button>
-			</div>
-		</div>
-	</header>
-
-	<sectiom class="benefits">
-		<div class="container-header">
-			<h3 class="benefits__title">Benefits of Odigo</h3>
-			<div class="benefits-items">
-
-				<div class="benefits-item">
-					<img src="images/Benefits/1.svg" alt="" class="benefits-item__image">
-					<div class="benefits-item__title">
-						Welcome to Odigo!
-					</div>
-					<div class="benefits-item__text">
-						Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-					</div>
-					<a href="#" class="link__arrow">LEARN MORE</a>
-				</div>
-
-				<div class="benefits-item">
-					<img src="images/Benefits/2.svg" alt="" class="benefits-item__image">
-					<div class="benefits-item__title">
-						Your Personal Japan Guide
-					</div>
-					<div class="benefits-item__text">
-						Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-					</div>
-					<a href="#" class="link__arrow"> LEARN MORE </a>
-				</div>
-
-				<div class="benefits-item">
-					<img src="images/Benefits/3.svg" alt="" class="benefits-item__image">
-					<div class="benefits-item__title">
-						Promoting Local Businesses
-					</div>
-					<div class="benefits-item__text">
-						Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-					</div>
-					<a href="#" class="link__arrow">LEARN MORE</a>
-				</div>
-
-			</div>
-		</div>
-	</sectiom>
-
-	<section class="inspired">
-		<div class="container-content">
-			<div class="inspired-top">
-				<div class="inspired-top__title section__title">
-					Get inspired for your next trip
-				</div>
-				<a href="#" class="inspired-top__link link__arrow"> VIEW ALL </a>
-			</div>
-			<div class="inspired-items">
-
-					<div class="inspired-item inspired-item__image-size_lg">
-						<img src="images/inspiured/1.jpg" alt="" class="inspired-item__image inspired-item__image_lg">
-						<div class="inspired-item__text">Mount Fuji</div>
-						<a href="#" class="inspired-item__link"></a>
-					</div>
-
-					<div class="inspired-item inspired-item__image-size_lg">
-						<img src="images/inspiured/2.jpg" alt="" class="inspired-item__image inspired-item__image_lg">
-						<div class="inspired-item__text">Kyoto</div>
-						<a href="#" class="inspired-item__link"></a>
-					</div>
-
-
-					<div class="inspired-item inspired-item__image-size_sm">
-						<img src="images/inspiured/3.jpg" alt="" class="inspired-item__image inspired-item__image_sm">
-						<div class="inspired-item__text">Tokyo</div>
-						<a href="#" class="inspired-item__link"></a>
-					</div>
-
-					<div class="inspired-item
-					inspired-item__image-size_sm">
-						<img src="images/inspiured/4.jpg" alt="" class="inspired-item__image inspired-item__image_sm">
-						<div class="inspired-item__text">Niigata</div>
-						<a href="#" class="inspired-item__link"></a>
-					</div>
-
-					<div class="inspired-item
-					inspired-item__image-size_sm">
-						<img src="images/inspiured/5.jpg" alt="" class="inspired-item__image inspired-item__image_sm">
-						<div class="inspired-item__text">Sapporo</div>
-						<a href="#" class="inspired-item__link"></a>
-					</div>
-
-				</div>
-		</div>
-	</section>
-
-	<section class="content">
-		<div class="container-content">
-			<div class="content-items">
-				<div class="content-item">
-					<div class="content-item__image">
-						<img src="images/content-img/1.jpg" alt="" class="content-item__image-img">
-					</div>
-					<div class="content-item__descr">
-						<div class="content-item__descr-title">
-							Prefecture in Focus: Tottori
+				<div class="footer-item__social">
+					<a href="">
+						<div class="footer-item">
+							<div class="footer-item__icon">
+								<img src="images/footer/4.svg" alt="">
+							</div>
+							<div class="footer-item__text">
+								Группа VK
+							</div>
 						</div>
-						<div class="content-item__descr-text">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
-						</div>
-						<a href="#" class="link__arrow">
-							VIEW PREFECTURE
-						</a>
-					</div>
-				</div>
+					</a>
 
-				<div class="content-item content-item__revers">
-					<div class="content-item__image">
-						<img src="images/content-img/2.jpg" alt="" class="content-item__image-img">
-					</div>
-					<div class="content-item__descr ">
-						<div class="content-item__descr-title">
-							Featured Neighborhood: Kyoto’s Arashiyama
+					<a href="">
+						<div class="footer-item">
+							<div class="footer-item__icon">
+								<img src="images/footer/5.svg" alt="">
+							</div>
+							<div class="footer-item__text">
+								Телеграмм канал
+							</div>
 						</div>
-						<div class="content-item__descr-text">
-							Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
-						</div>
-						<a href="#" class="link__arrow">
-							VIEW PREFECTURE
-						</a>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section class="places">
-		<div class="container-content">
-			<div class="section__title places__title">
-				Today top places to visit
-			</div>
-			<div class="places-items">
+	
 
-				<div class="places-item">
-					<div class="places-item__image-wrapper">
-						<img src="images/places/1.jpg" alt="" class="places-item__image">
-						<div class="places-item__image-footer">
-							<div class="places-item__image-footer-title">
-								NAGOYA
-							</div>
-							<div class="places-item__image-footer-social">
-								<span class="places-item__image-footer-like">
-									221
-								</span>
-								<span class="places-item__image-footer-com">
-									50
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="places-item__text">
-						Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-					</div>
-					<button class="places-item__button">
-						SEE MORE
-					</button>
-				</div>
-
-				<div class="places-item">
-					<div class="places-item__image-wrapper">
-						<img src="images/places/2.jpg" alt="" class="places-item__image">
-						<div class="places-item__image-footer">
-							<div class="places-item__image-footer-title">
-								NIIGATA
-							</div>
-							<div class="places-item__image-footer-social">
-								<span class="places-item__image-footer-like">
-									221
-								</span>
-								<span class="places-item__image-footer-com">
-									50
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="places-item__text">
-						Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-					</div>
-					<button class="places-item__button">
-						SEE MORE
-					</button>
-				</div>
-
-				<div class="places-item">
-					<div class="places-item__image-wrapper">
-						<img src="images/places/3.jpg" alt="" class="places-item__image">
-						<div class="places-item__image-footer">
-							<div class="places-item__image-footer-title">
-								OSAKA
-							</div>
-							<div class="places-item__image-footer-social">
-								<span class="places-item__image-footer-like">
-									221
-								</span>
-								<span class="places-item__image-footer-com">
-									50
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="places-item__text">
-						Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-					</div>
-					<button class="places-item__button">
-						SEE MORE
-					</button>
-				</div>
-
-				<div class="places-item">
-					<div class="places-item__image-wrapper">
-						<img src="images/places/4.jpg" alt="" class="places-item__image">
-						<div class="places-item__image-footer">
-							<div class="places-item__image-footer-title">
-								SAITAMA
-							</div>
-							<div class="places-item__image-footer-social">
-								<span class="places-item__image-footer-like">
-									221
-								</span>
-								<span class="places-item__image-footer-com">
-									50
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="places-item__text">
-						Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-					</div>
-					<button class="places-item__button">
-						SEE MORE
-					</button>
-				</div>
-
-				<div class="places-item">
-					<div class="places-item__image-wrapper">
-						<img src="images/places/5.jpg" alt="" class="places-item__image">
-						<div class="places-item__image-footer">
-							<div class="places-item__image-footer-title">
-								UENO
-							</div>
-							<div class="places-item__image-footer-social">
-								<span class="places-item__image-footer-like">
-									221
-								</span>
-								<span class="places-item__image-footer-com">
-									50
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="places-item__text">
-						Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-					</div>
-					<button class="places-item__button">
-						SEE MORE
-					</button>
-				</div>
-
-				<div class="places-item">
-					<div class="places-item__image-wrapper">
-						<img src="images/places/6.jpg" alt="" class="places-item__image">
-						<div class="places-item__image-footer">
-							<div class="places-item__image-footer-title">
-								SHIBUYA
-							</div>
-							<div class="places-item__image-footer-social">
-								<span class="places-item__image-footer-like">
-									221
-								</span>
-								<span class="places-item__image-footer-com">
-									50
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="places-item__text">
-						Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-					</div>
-					<button class="places-item__button">
-						SEE MORE
-					</button>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section class="video">
-		<div class="container-max">
-			<div class="video-wrapper">
-				<div class="video-item">
-					<iframe class="video-element" src="https://www.youtube.com/embed/F0AT_7uVbeo?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer class="footer">
-		<div class="container-header">
-			<div class="footer__wrapper">
-				<div class="footer__logo-item">
-				<img src="images/Logo.svg" alt="Logo" class="footer__logo-item">
-				</div>
-
-				<div class="footer-items">
-
-					<div class="footer-item">
-						<ul>
-							<li class="footer-item__company-title">Company</li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Team</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-						</ul>
-					</div>
-			
-					<div class="footer-item">
-						<ul>
-							<li class="footer-item__company-title">Locations</li>
-							<li><a href="#">Tokyo</a></li>
-							<li><a href="#">Kyoto</a></li>
-							<li><a href="#">Osaka</a></li>
-							<li><a href="#">Hokkaido</a></li>
-						</ul>
-					</div>
-				
-					<div class="footer-item">
-						<ul>
-							<li class="footer-item__company-title">Social Media</li>
-							<li><a href="#">Facebook</a></li>
-							<li><a href="#">Twitter</a></li>
-							<li><a href="#">Instagram</a></li>
-							<li><a href="#">Youtube</a></li>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>  
 </body>
 </html>
